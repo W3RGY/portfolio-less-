@@ -2,6 +2,7 @@
 
 .contact {
 	display: flex;
+	background: url(https://via.placeholder.com/480x700) right center no-repeat;
 }
 
 .contact__left {
@@ -9,7 +10,25 @@
 	padding: 2rem;
 }
 
-.contact__right {
-	width: 53%;
-	background: @black url(https://via.placeholder.com/480x700) center no-repeat;
+.contact__info {
+	margin: 2rem 0 3rem;
+	padding: 0;
+	list-style: none;
+	font-size: 0.94rem;
+	color: @black;
+	font-weight: 300;
+}
+
+.contact__info-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: .75rem;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.contact__info-icon {
+	margin-right: 1rem;
 }
