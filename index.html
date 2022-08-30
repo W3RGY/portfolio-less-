@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Portfolio</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -76,73 +77,73 @@
 <div class="works">
 	<div class="container">
 		<div class="works__nav">
-			<a class="works__nav-link" href="#">All</a>
-			<a class="works__nav-link" href="#">App</a>
-			<a class="works__nav-link" href="#">Website</a>
-			<a class="works__nav-link" href="#">Interaction</a>
+			<a class="works__nav-link" href="#" data-filter="all">All</a>
+			<a class="works__nav-link" href="#" data-filter="app">App</a>
+			<a class="works__nav-link" href="#" data-filter="website">Website</a>
+			<a class="works__nav-link" href="#" data-filter="interaction">Interaction</a>
 		</div>
 
 		<div class="portfolio">
-			<div class="portfolio__col">
+			<div class="portfolio__col" data-cat="app">
 				<div class="work">
 					<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 					<div class="work__content">
-						<div class="work__cat">CATEGORY</div>
+						<div class="work__cat">CATEGORY: app</div>
 						<div class="work__title">PROJECT TITLE
 							<time class="work__date" datetime="2022-08-23 19:00">2022</time>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="portfolio__col">
+			<div class="portfolio__col" data-cat="website">
 				<div class="work">
 					<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 					<div class="work__content">
-						<div class="work__cat">CATEGORY</div>
+						<div class="work__cat">CATEGORY: website</div>
 						<div class="work__title">PROJECT TITLE
 							<time class="work__date" datetime="2022-08-23 19:00">2022</time>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="portfolio__col">
+			<div class="portfolio__col" data-cat="interaction">
 				<div class="work">
 					<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 					<div class="work__content">
-						<div class="work__cat">CATEGORY</div>
+						<div class="work__cat">CATEGORY: Interaction</div>
 						<div class="work__title">PROJECT TITLE
 							<time class="work__date" datetime="2022-08-23 19:00">2022</time>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="portfolio__col">
+			<div class="portfolio__col" data-cat="website">
 				<div class="work">
 					<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 					<div class="work__content">
-						<div class="work__cat">CATEGORY</div>
+						<div class="work__cat">CATEGORY: website</div>
 						<div class="work__title">PROJECT TITLE
 							<time class="work__date" datetime="2022-08-23 19:00">2022</time>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="portfolio__col">
+			<div class="portfolio__col" data-cat="interaction">
 				<div class="work">
 					<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 					<div class="work__content">
-						<div class="work__cat">CATEGORY</div>
+						<div class="work__cat">CATEGORY: Interaction</div>
 						<div class="work__title">PROJECT TITLE
 							<time class="work__date" datetime="2022-08-23 19:00">2022</time>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="portfolio__col">
+			<div class="portfolio__col" data-cat="app">
 				<div class="work">
 					<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 					<div class="work__content">
-						<div class="work__cat">CATEGORY</div>
+						<div class="work__cat">CATEGORY: app</div>
 						<div class="work__title">PROJECT TITLE
 							<time class="work__date" datetime="2022-08-23 19:00">2022</time>
 						</div>
@@ -510,7 +511,8 @@
 
 
 
-
+<!-- JS -->
+<script src="js/app.js"></script>
 
 </body>
 </html>
