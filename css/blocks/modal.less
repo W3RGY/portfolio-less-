@@ -1,7 +1,7 @@
 // main: ../style.less
 
 .modal {
-	display: flex;
+	display: none;
 	width: 100%;
 	height: 100%;
 	padding: 1rem;
@@ -11,6 +11,10 @@
 	top: 0;
 	z-index: 1000;
 	overflow: auto;
+
+	&.show {
+		display: flex;
+	}
 }
 
 .modal__dialog {
@@ -19,6 +23,8 @@
 	max-width: 1200px;
 	margin: auto;
 	background-color: #fff;
+	transform: rotateX(90deg);
+	transition: transform .2s linear;
 
 	&--sm {
 	max-width: 900px;
