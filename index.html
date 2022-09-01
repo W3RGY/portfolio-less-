@@ -319,7 +319,13 @@
 		</button>
 		<div class="modal-work">
 			<div class="modal-work__preview">
-				<img class="modal-work__photo" src="https://via.placeholder.com/790x780" alt="">
+				<div data-slider="slick">
+					<div>
+						<img class="modal-work__photo" src="https://via.placeholder.com/790x780" alt="">
+					</div><div>
+						<img class="modal-work__photo" src="https://via.placeholder.com/790x780/333" alt="">
+					</div>
+				</div>
 			</div>
 			<div class="modal-work__content">
 				<div class="modal-work__header">
@@ -335,11 +341,11 @@
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum explicabo quibusdam molestias praesentium. Aspernatur harum, minus laborum veniam eaque officiis, molestiae voluptatum aliquam autem quae, aliquid dicta adipisci? Eligendi.</p>
 				</div>
 				<div class="modal-work__footer">
-					<button class="modal-work__btn" type="button">
+					<button class="modal-work__btn slickPrev" type="button">
 						<img src="images/back.svg" height="11px" alt="">
 						PREVIOUS
 					</button>
-					<button class="modal-work__btn" type="button">
+					<button class="modal-work__btn slickNext" type="button">
 						NEXT
 						<img src="images/next.svg" height="11px" alt="">
 					</button>
@@ -512,6 +518,7 @@
 
 
 <!-- JS -->
+<script src="js/slick.min.js"></script>
 <script src="js/app.js"></script>
 
 </body>
