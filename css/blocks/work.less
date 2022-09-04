@@ -7,14 +7,20 @@
 	box-shadow: 0 0 4px fade(#000, 25%);
 	transition: box-shadow .2s linear;
 
+
 	&:hover {
 		box-shadow: 0 0 25px fade(#000, 25%);
 	}
+
 }
 .work__image {
 	display: block;
 	max-width: 100%;
 	height: auto;            //adaptive picture
+
+	@media @mobile {
+		min-width: 100%;
+	}
 }
 
 .work__content {

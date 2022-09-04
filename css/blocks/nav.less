@@ -2,8 +2,22 @@
 
 .nav {
 	display: flex;
+	flex-wrap: wrap;
 	height: 100%;
 	align-items: center;
+
+	@media @mobile {
+		display: none;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		z-index: 1000;
+		width: 100%;
+
+		&.show {
+			display: flex;
+		}
+	}
 }
 
 .nav__link {
@@ -45,5 +59,9 @@
 			background-color: @black;
 			color: #fff;
 		}
+	}
+
+	@media @mobile {
+		width: 100%;
 	}
 }
