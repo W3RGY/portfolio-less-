@@ -3,20 +3,32 @@
 .contact {
 	display: flex;
 	background: url(https://via.placeholder.com/477x700) right center no-repeat;
+
+	@media @tablet {
+		background: none;
+	}
 }
 
 .contact__left {
 	width: 47%;
 	padding: 2rem;
+
+	@media @tablet {
+		width: 100%;
+	}
 }
 
 .contact__info {
-	margin: 2rem 0 3rem;
+	margin: 2rem 0.3rem;
 	padding: 0;
 	list-style: none;
 	font-size: 0.94rem;
 	color: @black;
 	font-weight: 300;
+
+	@media @mobile-sm {
+		margin: 1.4rem 0.3rem;
+	}
 }
 
 .contact__info-item {

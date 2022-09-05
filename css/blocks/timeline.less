@@ -18,6 +18,10 @@
 		background-color: @black;
 		position: absolute;
 	}
+
+	@media @mobile-sm {
+		margin: 2.5rem auto;
+	}
 }
 
 .timeline__col {
@@ -26,10 +30,19 @@
 	&--left {
 		text-align: right;
 		padding-right: 3.2rem;
+
+		@media @mobile-sm {
+			padding-right: 1rem;
+		}
 	}
+
 
 	&--right {
 		padding-left: 3.2rem;
+
+		@media @mobile-sm {
+			padding-left: 1rem;
+		}
 	}
 }
 
@@ -39,6 +52,10 @@
 	text-transform: uppercase;
 	color: @black;
 	font-weight: 700;
+
+	@media @mobile {
+		margin-bottom: 1rem;
+	}
 }
 
 .timeline__item {
@@ -76,4 +93,8 @@
 	font-weight: 300;
 	line-height: 1.5;
 	font-size: 0.8rem;
+
+	@media @mobile-sm {
+		line-height: 1.3;
+	}
 }
